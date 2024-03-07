@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1200px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.header-img-container {
+  position: relative;
+}
+
+.header-img-container > p {
+  position: absolute;
+  font-size: 3.5rem;
+  bottom: 5px;
+  left: 5px;
+  letter-spacing: 2px;
+  line-height: 120%;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-me-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icons {
+  width: 30px;
+  height: auto;
+}
