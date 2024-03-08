@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
-  --orange: #ed944d;
   --white: #faf9f6;
   --blue: #4a6274;
   --gray: #ebeae8;
+  --black: #28282b;
 }
 
 * {
@@ -15,6 +15,7 @@
 }
 
 body {
+  color: var(--black);
   max-width: 1024px;
   margin: 0 auto;
   background-color: var(--gray);
@@ -54,6 +55,7 @@ h1 {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .about-me {
@@ -92,18 +94,18 @@ h2 {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
 }
 
 .project {
-  flex: 1 0 300px;
-  border: 1px solid black;
+  flex: 1 0 250px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px lightgray;
 }
 
-.project-img {
-  height: 200px;
-  /* background-color: bisque; */
+.project-desc {
+  padding: 10px;
 }
 
 .project-desc > div {
