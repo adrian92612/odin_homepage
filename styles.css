@@ -5,29 +5,30 @@
 }
 
 body {
-  max-width: 1200px;
-  min-height: 100dvh;
+  max-width: 1024px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
+/* ------------------------------------------------------------------------
+                    HEADER
+--------------------------------------------------------------------------*/
+
 header {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 0 10px;
   background: linear-gradient(330deg, rgb(255, 255, 255) 55%, aqua 1%);
 }
 
 .header-img-container {
   position: relative;
-  margin: 25px;
+  padding: 25px;
 }
 
 .header-img-container > p {
   position: absolute;
   font-size: 3.5rem;
-  bottom: 5px;
-  left: 5px;
+  bottom: 5%;
+  left: 10%;
   letter-spacing: 2px;
   line-height: 120%;
 }
@@ -57,16 +58,28 @@ img {
   height: auto;
 }
 
+/* ------------------------------------------------------------------------
+                    MAIN
+--------------------------------------------------------------------------*/
+
+main {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+main > h2 {
+  text-align: center;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
-  padding: 0 20px;
   gap: 20px;
+  justify-content: center;
 }
 
 .project {
-  flex: 1 0 250px;
+  flex: 1 0 300px;
   border: 1px solid black;
 }
 
@@ -74,3 +87,21 @@ img {
   height: 200px;
   background-color: bisque;
 }
+
+.project-desc > div {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px;
+}
+.project-desc img {
+  width: 25px;
+  height: auto;
+}
+
+.project-desc h3 {
+  margin-right: auto;
+}
+
+/* ------------------------------------------------------------------------
+                    FOOTER
+--------------------------------------------------------------------------*/
