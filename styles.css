@@ -1,12 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --orange: #ed944d;
+  --white: #faf9f6;
+  --blue: #4a6274;
+  --gray: #ebeae8;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 body {
   max-width: 1024px;
   margin: 0 auto;
+  background-color: var(--gray);
 }
 
 /* ------------------------------------------------------------------------
@@ -16,7 +27,7 @@ body {
 header {
   margin-bottom: 50px;
   padding: 0 10px;
-  background: linear-gradient(330deg, rgb(255, 255, 255) 55%, aqua 1%);
+  background: linear-gradient(330deg, var(--gray) 55%, var(--blue) 1%);
 }
 
 .header-img-container {
@@ -27,9 +38,13 @@ header {
 .header-img-container > p {
   position: absolute;
   font-size: 3.5rem;
+  font-family: "Alkatra", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: var(--gray);
+  text-shadow: 1px 2px var(--blue);
   bottom: 5%;
   left: 10%;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
   line-height: 120%;
 }
 
@@ -67,8 +82,11 @@ main {
   padding: 20px;
 }
 
-main > h2 {
+h2 {
   text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  letter-spacing: 5px;
 }
 
 .projects {
@@ -85,7 +103,7 @@ main > h2 {
 
 .project-img {
   height: 200px;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 .project-desc > div {
@@ -105,3 +123,22 @@ main > h2 {
 /* ------------------------------------------------------------------------
                     FOOTER
 --------------------------------------------------------------------------*/
+footer {
+  background-color: var(--blue);
+  color: var(--gray);
+  padding-top: 40px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
