@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="header-img-container">
-        <img src="images\my pic.jpg" alt="Man with glasses looking into mirror" />
+        <img src="images\header-pic.jpg" alt="Man with glasses looking into mirror" />
         <p>Adrian Villamin</p>
       </div>
       <section class="about-me">
@@ -157,8 +157,8 @@
     </main>
 
     <footer>
-      <h2>Contact Me</h2>
       <div class="contact-details">
+        <h2>Contact Me</h2>
         <p>Please get in touch if you think our work could be mutually beneficial</p>
         <p>1234 Some Road Some Town, Some Country, 12345</p>
         <p>
@@ -182,7 +182,16 @@
           />
         </div>
       </div>
-      <img class="footer-img" src="images\my pic 2.jpg" alt="Man standing on mountain top" />
+      <div class="footer-img-box">
+        <picture>
+          <source
+            media="(min-width:624px) and (max-width: 928px)"
+            srcset="images\footer-pic2.jpg"
+          />
+          <!-- <source media="(min-width:929px )" srcset="images\footer-pic.jpg" /> -->
+          <img class="footer-img" src="images\footer-pic.jpg" alt="Man standing on mountain top" />
+        </picture>
+      </div>
     </footer>
   </body>
 </html>

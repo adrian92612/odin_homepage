@@ -211,6 +211,17 @@ footer {
   .about-me-icons {
     display: none;
   }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .footer-img-box {
+    max-width: 350px;
+  }
 }
 
 @media screen and (min-width: 929px) {
