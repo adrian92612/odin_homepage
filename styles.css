@@ -17,7 +17,6 @@
 body {
   color: var(--black);
   max-width: 1200px;
-  border: 2px solid black;
   margin: 0 auto;
   background-color: var(--gray);
 }
@@ -30,6 +29,7 @@ header {
   padding: 0 10px;
   padding-bottom: 50px;
   background: linear-gradient(330deg, var(--gray) 55%, var(--blue) 1%);
+  position: relative;
 }
 
 .header-img-container {
@@ -173,7 +173,7 @@ footer {
     max-width: 300px;
     left: 50%;
     top: 50%;
-    transform: translate(-95%, -100%);
+    transform: translate(-95%, -70%);
     z-index: 1;
     position: absolute;
   }
@@ -192,7 +192,7 @@ footer {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -50%);
   }
 
   .about-me-heading {
@@ -225,7 +225,27 @@ footer {
 }
 
 @media screen and (min-width: 929px) {
-  body {
-    color: brown;
+  .header-img-container {
+    max-width: 400px;
+    transform: translate(-95%, -50%);
+  }
+
+  .header-img-container > p {
+    top: 85%;
+    left: 8%;
+  }
+
+  .about-me {
+    width: 500px;
+    transform: translate(-10%, -50%);
+  }
+
+  .corner-sqr {
+    width: 40px;
+    height: 225px;
+  }
+  .about-me-heading {
+    text-align: right;
+    padding-right: 50%;
   }
 }
