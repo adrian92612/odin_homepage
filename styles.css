@@ -16,7 +16,8 @@
 
 body {
   color: var(--black);
-  max-width: 1024px;
+  max-width: 1200px;
+  border: 2px solid black;
   margin: 0 auto;
   background-color: var(--gray);
 }
@@ -26,8 +27,8 @@ body {
 --------------------------------------------------------------------------*/
 
 header {
-  margin-bottom: 50px;
   padding: 0 10px;
+  padding-bottom: 50px;
   background: linear-gradient(330deg, var(--gray) 55%, var(--blue) 1%);
 }
 
@@ -38,14 +39,14 @@ header {
 
 .header-img-container > p {
   position: absolute;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "Alkatra", Arial, Helvetica, sans-serif;
   font-weight: bolder;
   color: var(--gray);
-  text-shadow: 1px 2px var(--blue);
+  text-shadow: 0 5px 5px var(--black);
   bottom: 5%;
-  left: 10%;
-  letter-spacing: 8px;
+  left: 12%;
+  letter-spacing: 5px;
   line-height: 120%;
 }
 
@@ -56,13 +57,17 @@ h1 {
 
 img {
   max-width: 100%;
-  height: auto;
+  display: block;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0 20px;
+}
+.corner-sqr {
+  display: none;
 }
 
 .about-me-icons {
@@ -95,12 +100,12 @@ h2 {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 }
 
 .project {
-  flex: 1 0 250px;
+  flex: 0 1 275px;
   border-radius: 2%;
   overflow: hidden;
   box-shadow: 0 5px 10px var(--blue);
@@ -158,13 +163,57 @@ footer {
                     MEDIA QUERIES
 --------------------------------------------------------------------------*/
 
-@media screen and (min-width: 607px) {
-  body {
-    color: red;
+@media screen and (min-width: 624px) {
+  header {
+    min-height: 500px;
+    background: linear-gradient(345deg, var(--gray) 40%, var(--blue) 10%);
+  }
+
+  .header-img-container {
+    max-width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-95%, -100%);
+    z-index: 1;
+    position: absolute;
+  }
+  .header-img-container > p {
+    white-space: nowrap;
+    top: 10%;
+    left: 75%;
+    z-index: 1;
+  }
+  .about-me {
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 500px;
+    box-shadow: 0 0 20px var(--black);
+    background-color: var(--gray);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+  }
+
+  .about-me-heading {
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .corner-sqr {
+    visibility: hidden;
+    display: inline;
+    width: 230px;
+    height: 160px;
+    float: left;
+  }
+
+  .about-me-icons {
+    display: none;
   }
 }
 
-@media screen and (min-width: 907px) {
+@media screen and (min-width: 929px) {
   body {
     color: brown;
   }
